@@ -1,0 +1,9 @@
+[build]
+  functions = "netlify/functions"
+
+# Not strictly required since the function itself sets `path: "/mcp"`
+# via its `config` export, but kept here for clarity / older setups.
+[[redirects]]
+  from = "/mcp"
+  to = "/.netlify/functions/mcp"
+  status = 200
